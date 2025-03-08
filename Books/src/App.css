@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+body {
+  background: linear-gradient(135deg, #f5ffd2, #aff0eb);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
+
+.book-card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 20rem;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.book-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.book-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.book-card h3 {
+  font-size: 1rem;
+  color: #4a5568;
+  text-align: center;
+}
+
+.book-card p {
+  color: #718096;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.book-card:hover {
+  transform: translateY(-8px); /* Moves card up slightly */
+  box-shadow: 0px 12px 24px rgba(209, 103, 103, 0.2);
+  background-color: #6deec1; /* Soft gray */
+}
+
+/* .book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+} */
+
